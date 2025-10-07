@@ -1,10 +1,11 @@
 import React from 'react';
 import logoImg  from '../../assets/logo.png'
 import { IoLogoGithub } from "react-icons/io";
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-    <li className='mr-5'>Home</li>
+    <Link to='/' className='mr-5'>Home </Link> 
     <li className='mr-5'>Apps</li>
     <li className='mr-5'>Installation</li>
     </>
@@ -27,7 +28,7 @@ const Navbar = () => {
     </div>
     <div className=" flex items-center">
         <img src={logoImg} alt="" className='w-15' />
-        <a className="btn btn-ghost text-xl">HERO.IO</a>
+        <Link to='/' className="btn btn-ghost text-xl">HERO.IO</Link> 
     </div>
     
   </div>
@@ -39,7 +40,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn text-white bg-linear-to-l from-[#632EE3] to-[#9F62F2] rounded-lg "> <IoLogoGithub />Contribute</a>
+    <a href='https://github.com/ahasana-ncs13/A08-Hero-Apps' target="_blank" className="btn text-white bg-linear-to-l from-[#632EE3] to-[#9F62F2] rounded-lg "> <IoLogoGithub />Contribute</a>
   </div>
 </div>
         </div>

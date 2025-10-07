@@ -14,8 +14,8 @@ const Banner = () => {
        At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
       </p>
      <div className="pb-6">
-         <button className="btn  mr-5"><IoLogoGooglePlaystore />Google Play</button>
-      <button className="btn "><FaAppStore />App Store</button>
+         <button className="btn  mr-5"><IoLogoGooglePlaystore /> <a href='https://play.google.com/store/games' target="_blank">Google Play</a></button>
+      <button className="btn "><FaAppStore /> <a href='https://www.apple.com/app-store/' target="_blank"> App Store </a> </button>
      </div>
      <img src={heroImg} alt="" />
     </div>

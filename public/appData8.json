@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn-icons-png.flaticon.com/512/833/833524.png",
+    "title": "PhotoMaster Pro",
+    "companyName": "PixelSoft",
+    "description": "PhotoMaster Pro lets you enhance, retouch, and transform your images with AI-powered tools. Adjust lighting, remove backgrounds, and apply stunning filters with ease. Supports RAW image files and layers for professional editing. Share directly to social media or export in high-resolution. Perfect for photographers, designers, and creative enthusiasts.",
+    "size": 85,
+    "reviews": 12450,
+    "ratingAvg": 4.6,
+    "downloads": "5.2M",
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 410 },
+      { "name": "3 star", "count": 1220 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 7100 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://cdn-icons-png.flaticon.com/512/2965/2965567.png",
+    "title": "FitTrack",
+    "companyName": "HealthZone Labs",
+    "description": "FitTrack helps you monitor your fitness goals with real-time tracking and smart analytics. Log workouts, steps, calories, and heart rate automatically. Personalized exercise plans and diet recommendations help you stay on track. Syncs with wearable devices for seamless integration. Track achievements and milestones to stay motivated every day.",
+    "size": 67,
+    "reviews": 9980,
+    "ratingAvg": 4.3,
+    "downloads": "2.8M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 4470 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png",
+    "title": "NoteEase",
+    "companyName": "ScribbleTech",
+    "description": "NoteEase is your digital notebook for work, study, and personal projects. Create notes with text, images, checklists, and audio. Organize ideas with folders, tags, and colors for easy access. Real-time sync across devices ensures you never lose your data. Share notes with teams or friends for seamless collaboration.",
+    "size": 42,
+    "reviews": 8750,
+    "ratingAvg": 4.7,
+    "downloads": "4.1M",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 5130 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://cdn-icons-png.flaticon.com/512/4052/4052984.png",
+    "title": "WeatherNow",
+    "companyName": "SkyView Inc.",
+    "description": "WeatherNow provides accurate weather forecasts with interactive maps and alerts. Track storms, rain, and temperature changes in real-time. Customize notifications for severe weather warnings. Plan outdoor activities with hourly and weekly forecasts. Supports multiple locations and offline updates for travelers.",
+    "size": 60,
+    "reviews": 13400,
+    "ratingAvg": 4.5,
+    "downloads": "6.7M",
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 6800 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://cdn-icons-png.flaticon.com/512/744/744465.png",
+    "title": "TaskFlow",
+    "companyName": "Prodigy Apps",
+    "description": "TaskFlow is designed to boost productivity and manage daily tasks efficiently. Create to-do lists, reminders, and project boards easily. Track progress with visual dashboards and analytics. Collaborate with teams for shared projects and deadlines. Receive smart suggestions to optimize your workflow and save time.",
+    "size": 50,
+    "reviews": 8200,
+    "ratingAvg": 4.8,
+    "downloads": "1.9M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 5020 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://cdn-icons-png.flaticon.com/512/727/727245.png",
+    "title": "SoundBeat",
+    "companyName": "AudioVerse",
+    "description": "SoundBeat provides a premium music experience with millions of songs. Create playlists, listen offline, and explore curated recommendations. Fine-tune your sound with an equalizer and bass booster. Discover new artists and genres easily. Enjoy high-quality, ad-free streaming anytime and anywhere.",
+    "size": 90,
+    "reviews": 24300,
+    "ratingAvg": 4.2,
+    "downloads": "12.3M",
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1700 },
+      { "name": "3 star", "count": 3900 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 8500 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://cdn-icons-png.flaticon.com/512/891/891462.png",
+    "title": "ShopSmart",
+    "companyName": "MegaDeals Ltd.",
+    "description": "ShopSmart makes online shopping faster and smarter. Compare prices across multiple stores and find the best deals. Get real-time notifications for flash sales and discounts. Track orders and manage wishlists efficiently. Save money with coupons, rewards, and cashback offers every day.",
+    "size": 78,
+    "reviews": 18700,
+    "ratingAvg": 4.4,
+    "downloads": "8.6M",
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2800 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 6400 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921822.png",
+    "title": "CookBook+",
+    "companyName": "TastyLab",
+    "description": "CookBook+ offers thousands of recipes from cuisines around the world. Watch step-by-step videos for easier cooking. Save favorite dishes and organize meal plans. Filter recipes by ingredients, diet, or difficulty. Share your culinary creations and explore new dishes every day.",
+    "size": 88,
+    "reviews": 9600,
+    "ratingAvg": 4.6,
+    "downloads": "4.5M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 5400 }
+    ]
+  }
+]
