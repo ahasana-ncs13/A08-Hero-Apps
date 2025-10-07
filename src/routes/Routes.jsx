@@ -9,7 +9,8 @@ import Home from '../Pages/Home/Home';
     Component: Root,
     children : [
         {
-            path:'/home',
+            index : true,
+            path:'/',
             Component : Home,
         }
     ]
