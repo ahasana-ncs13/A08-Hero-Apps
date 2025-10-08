@@ -17,19 +17,19 @@ import AppError from '../Pages/AppError/AppError';
         {
             index: true,
             path:'/',
-            loader : ()=> fetch("/public/appData8.json"),
+            loader : ()=> fetch("/appData8.json"),
             Component : Home,
             
         },
         {
             path : '/appDetails/:id',
-            loader : ()=> fetch("/public/appData15.json"),
+            loader : ()=> fetch("/appData15.json"),
             Component : AppDetails ,
             errorElement: <AppError></AppError>
         },
         {
            path:'/allApps' ,
-           loader : ()=> fetch("/public/appData15.json"),
+           loader : ()=> fetch("/appData15.json"),
            Component : AllApps,
         }
     ]
