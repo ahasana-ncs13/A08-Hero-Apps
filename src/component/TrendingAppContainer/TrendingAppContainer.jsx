@@ -3,11 +3,11 @@ import downloadImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
 import { Link } from 'react-router';
 
-const TrendingApp = ({trendingApps}) => {
+const TrendingApp = ({Apps}) => {
     // console.log(trendingApps)
-    const {image,title,downloads,ratingAvg}=trendingApps
+    const {image,title,downloads,ratingAvg}=Apps
     return (
-        <Link to={`/appDetails/${trendingApps.id}`}>
+        <Link to={`/appDetails/${Apps.id}`}>
         <div>
             <div className="card bg-base-100 shadow-sm">
   <figure className="px-5 pt-5">
