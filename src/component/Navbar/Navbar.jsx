@@ -1,12 +1,22 @@
 import React from 'react';
 import logoImg  from '../../assets/logo.png'
 import { IoLogoGithub } from "react-icons/io";
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-    <Link to='/' className='mr-5'>Home </Link> 
-   <Link to='/allApps' className='mr-5'>Apps</Link>
+    <NavLink to='/' style={({ isActive, isPending }) => ({
+  color:
+    isActive ? "text-[#632EE3]" :
+    isPending ? "blue" : "black"
+})}  className='mr-5'>Home </NavLink> 
+   <NavLink to='/allApps' style={({ isActive, isPending }) => ({
+  color:
+    isActive ? "text-[#632EE3]" :
+    isPending ? "blue" : "black"
+})}  className='mr-5'>Apps</NavLink>
+
+
     <li className='mr-5'>Installation</li>
     </>
    
