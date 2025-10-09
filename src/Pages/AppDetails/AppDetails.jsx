@@ -7,6 +7,7 @@ import rewiewsImg from '../../assets/icon-review.png'
 
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
 import { toast } from 'react-toastify';
+import { getStoredApp, setAppToStored } from '../../Utilities/Utilities';
 
 
 
@@ -16,19 +17,22 @@ const AppDetails = () => {
     const data = useLoaderData()
     const idN = parseInt(id)
     const app = data.find((appData)=> appData.id === idN )
-    console.log(app)
+    // console.log(app)
     const {image,companyName,description,downloads,ratingAvg
 ,ratings,reviews,size,title} = app
 
 const dataC = ratings
 
-let [ install , setInstall]= useState(false)
+let [ install , setInstall]= useState(() => getStoredApp().includes(id))
 
-const handleInstall = ()=>{
+const handleInstall = (id)=>{
      setInstall(true)
     toast(" App installed successfully")
+    setAppToStored(id)
 }
+// const setInstallApp = (id)=>{
 
+// }
     return (
         <div className='w-11/12 mx-auto'>
             <div className="card card-side bg-base-100 shadow-sm gap-10 my-10">
@@ -60,7 +64,7 @@ const handleInstall = ()=>{
         <h2 className='text-3xl font-bold'>{reviews}</h2>
        </div>
     </div>
-<button className="btn text-white bg-[#00D390] border-none mt-2" onClick={handleInstall } disabled ={install} >{ !install ? "Install Now " : "Installed " } <span>( {size} MB)</span></button>
+<button className="btn text-white bg-[#00D390] border-none mt-2" onClick={ ()=> handleInstall(id) } disabled={install} >{ !install ? "Install Now " : "Installed " } <span>( {size} MB)</span></button>
 
   </div>
   

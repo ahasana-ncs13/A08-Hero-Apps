@@ -5,19 +5,19 @@ import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-    <NavLink to='/' style={({ isActive, isPending }) => ({
-  color:
-    isActive ? "text-[#632EE3]" :
-    isPending ? "blue" : "black"
-})}  className='mr-5'>Home </NavLink> 
-   <NavLink to='/allApps' style={({ isActive, isPending }) => ({
-  color:
-    isActive ? "text-[#632EE3]" :
-    isPending ? "blue" : "black"
-})}  className='mr-5'>Apps</NavLink>
+    <NavLink to='/' className={({isActive,isPending})=> 
+   isActive? "mr-5 text-[#632EE3] underline " : isPending? " mr-5 text-black": "mr-5 text-black"
+  }>Home </NavLink>
 
+   <NavLink to='/allApps'  className={({isActive,isPending})=> 
+   isActive? "mr-5 text-[#632EE3] underline " : isPending? " mr-5 text-black": "mr-5 text-black"
+  }>Apps</NavLink>
 
-    <li className='mr-5'>Installation</li>
+   <NavLink to='/install' className={({ isActive})=>
+    isActive? "mr-5 text-[#632EE3] underline" : "text-black"
+    
+   } >Installation </NavLink>
+
     </>
    
     return (
