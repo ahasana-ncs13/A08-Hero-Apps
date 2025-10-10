@@ -2,8 +2,12 @@ import React from 'react';
 import { FiDownload } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
 
-const InstalledApp = ({p}) => {
-     const {image,downloads,ratingAvg,size,title} = p
+const InstalledApp = ({p,UninstallApp}) => {
+     const {image,downloads,ratingAvg,size,title,id} = p
+
+     const handleUninstall =(id)=>{
+        UninstallApp(id)
+     }
 
     return (
         <div className='w-11/12 mx-auto '>
@@ -25,7 +29,7 @@ const InstalledApp = ({p}) => {
         </div>
                 <div className="mt-3">
                  
-                    <button className='border-none  btn  mr-5 bg-[#00D390] text-white'>Uninstall</button>
+                    <button onClick={()=>handleUninstall(id)} className='border-none  btn  mr-5 bg-[#00D390] text-white'>Uninstall</button>
                 </div>
             </div>
   </div>

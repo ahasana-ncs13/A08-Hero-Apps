@@ -23,4 +23,12 @@ const setAppToStored = (id)=>{
     }
 }
 
-export {setAppToStored,getStoredApp}
+const removeStoredApp =(id)=>{
+     const storedAPP = getStoredApp()
+     const IdSTR = String(id)
+     const removedApp = storedAPP.filter( appId => appId != id )
+     const removedAppSTR = JSON.stringify(removedApp)
+     localStorage.setItem("installApp",removedAppSTR)
+}
+
+export {setAppToStored,getStoredApp,removeStoredApp}

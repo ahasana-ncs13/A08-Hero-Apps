@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useLoaderData } from 'react-router';
-import { getStoredApp } from '../../Utilities/Utilities';
+import { getStoredApp, removeStoredApp } from '../../Utilities/Utilities';
 import InstalledApp from '../../component/InstalledApp/InstalledApp';
+import { toast } from 'react-toastify';
 
 const Installation = () => {
 
@@ -33,6 +34,13 @@ const Installation = () => {
     }
 
 
+    const UninstallApp =(id)=>{
+        // console.log(id)
+        setMyInstallation(myInstallation.filter((ins)=> ins.id != id))
+        removeStoredApp(id)
+        toast("App is uninstalled")
+    }
+
     return (
         <div className="bg-[#d2d2d230] pb-10">
         <div className='w-11/12 mx-auto'>
@@ -55,7 +63,7 @@ const Installation = () => {
         </div>
 
 {
-    myInstallation.map(p=><InstalledApp key={p.id} p={p}></InstalledApp>)
+    myInstallation.map(p=><InstalledApp UninstallApp={UninstallApp} key={p.id} p={p}></InstalledApp>)
 }
 
         </div>
