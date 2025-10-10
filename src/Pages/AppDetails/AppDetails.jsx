@@ -34,7 +34,7 @@ const handleInstall = (id)=>{
 
     return (
         <div className='w-11/12 mx-auto'>
-            <div className="card card-side bg-base-100 shadow-sm gap-10 my-10">
+            <div className="card card-side bg-base-100 shadow-sm gap-10 my-10 ">
   <figure>
     <img
       src={image}
