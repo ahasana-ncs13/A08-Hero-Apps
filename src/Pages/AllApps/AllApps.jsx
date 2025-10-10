@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
+import { useLoaderData} from 'react-router';
 import TrendingAppContainer from '../../component/TrendingAppContainer/TrendingAppContainer';
 
 const AllApps = () => {
+  const [searchLoading , setSearchLoading]=useState(false)
     const [search, setSearch]=useState("")
     const data = useLoaderData()
     
-    const handleSearch = (e) => {
+  const handleSearch = (e) => { 
+      setSearchLoading(true)
      setSearch(e.target.value);
+     setTimeout(() => setSearchLoading(false), 400);
     }
-    
+  
     const filteredApps = data.filter(app =>
-  app.title.toLowerCase().includes(search.toLowerCase())
-);
+  app.title.toLowerCase().includes(search.toLowerCase()));
    
 
     
@@ -42,6 +44,14 @@ const AllApps = () => {
 </label>
             </div>
 
+  {
+      searchLoading && (
+                <div className=" w-full h-full flex items-center justify-center mb-5  ">
+             <span className="loading loading-bars loading-xl"></span>
+             </div>
+            )
+    }
+    
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-15">
             {
