@@ -34,6 +34,7 @@ import Installation from '../Pages/Installation/Installation';
            Component : AllApps,
         },{
           path:'/install',
+           loader : ()=> fetch("/appData15.json"),
           Component:Installation,
         }
     ]

@@ -8,6 +8,7 @@ import rewiewsImg from '../../assets/icon-review.png'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
 import { toast } from 'react-toastify';
 import { getStoredApp, setAppToStored } from '../../Utilities/Utilities';
+import Installation from '../Installation/Installation';
 
 
 
@@ -30,9 +31,7 @@ const handleInstall = (id)=>{
     toast(" App installed successfully")
     setAppToStored(id)
 }
-// const setInstallApp = (id)=>{
 
-// }
     return (
         <div className='w-11/12 mx-auto'>
             <div className="card card-side bg-base-100 shadow-sm gap-10 my-10">
